@@ -5,7 +5,6 @@ import ThreeGlobe from "three-globe";
 import { useThree, Canvas, extend } from "@react-three/fiber"; // Removed Object3DNode here
 import { OrbitControls } from "@react-three/drei";
 import countries from "@/data/globe.json";
-import { Object3D } from "three";
 
 extend({ ThreeGlobe });
 
