@@ -1,6 +1,5 @@
 import Grid from '@/components/Grid';
 import Hero from '@/components/Hero';
-import { BentoGrid } from '@/components/ui/BentoGrid';
 import { FloatingNav } from '@/components/ui/FloatingNavbar';
 import { FaHome } from 'react-icons/fa';
 
