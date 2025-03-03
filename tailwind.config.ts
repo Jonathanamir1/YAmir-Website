@@ -2,7 +2,6 @@ import type { Config } from 'tailwindcss';
 
 import svgToDataUri from 'mini-svg-data-uri';
 
-import colors from 'tailwindcss/colors';
 import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
 
 export default {
@@ -12,6 +11,7 @@ export default {
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
+		
 		extend: {
 			animation: {
 				shimmer: 'shimmer 2s linear infinite',
@@ -84,8 +84,9 @@ export default {
 				icon: '#C4C4C4',
 				shadeLow: '#333534',
 				shadeHigh:'#3e4140',
-				shadow:'#606563'
+				shadow:'#6b716e'
 			},
+			
 		},
 	},
 	plugins: [
