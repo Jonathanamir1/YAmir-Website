@@ -16,31 +16,31 @@ const RecentProjects = () => {
       
       
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-32 gap-y-8 mt-10">
-        {projects.map(({id, img, title, des, iconLists}) => (
+        {projects.map(({id, img, title, des, iconLists, link}) => (
           <div
-            className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-96 w-[80vw] sm:w-[570px]"
+            className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center w-[80vw] sm:w-[570px]"
             key={id}
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              title={link}
+              href={link}
             >
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] lg:h-[30vh] mb-10">
                 
                 <div
-                  className="relative w-full h-full overflow-hidden rounded-3xl "
+                  className="relative w-full h-full overflow-hidden rounded-3xl"
                   // style={{ backgroundColor: "#3e4140" }}
                 >
 
                   
                   {/* <Image src="/bg.png" alt="bgimg" className="rounded-full" fill /> */}
                 </div>
-                <Image
-                    src={img}
-                    alt="cover"
-                    className="z-10 absolute bottom-0 "
-                    fill
-                  />
+                  <Image
+                      src={img}
+                      alt="cover"
+                      className="z-10 absolute bottom-0 rounded-3xl p-4"
+                      fill
+                    />
               </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -62,7 +62,7 @@ const RecentProjects = () => {
                   {iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border border-white/[.2] rounded-full bg-primary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}

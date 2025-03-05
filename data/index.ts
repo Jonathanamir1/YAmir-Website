@@ -10,36 +10,29 @@ export const navItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Outdoor Tours",
+    des: "Explore the great outdoors!",
+    img: "/tours.png",
+    iconLists: ["/css.svg", "/javascript.svg","/html.svg"],
+    link: "https://css-tours.netlify.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Nexter",
+    des: "Own your own home!",
+    img: "/nexter.png",
+    iconLists: ["/css.svg", "/javascript.svg","/html.svg"], 
+    link: "https://nextercsscourse.netlify.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Travel The World",
+    des: "username : user@user.com pass: 1234",
+    img: "/worldWise.png",
+    iconLists: ["/css.svg", "/javascript.svg","/html.svg", "/react-2.svg", "tailwind.svg"],
+    link: "https://world-map-react.netlify.app/",
   },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
+
 ];
 
 export const testimonials = [
