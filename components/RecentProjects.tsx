@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const RecentProjects = () => {
   return (
-    <div className="">
+    <div className="pt-20" id="projects">
       <h1 className="heading justify-center md:max-w-full text-center text-4xl md:text-6xl font-klemer font-bold">
         A small selection of{" "}
         <span className="text-highlight">recent projects</span>
