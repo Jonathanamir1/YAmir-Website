@@ -7,19 +7,19 @@ import { Button } from "./ui/MovingBorder";
 
 const Experience = () => {
   return (
-    <div className="py-10 w-full" id="experience">
+    <div className="py-10 w-full mt-5" id="experience">
       <h1 className="heading justify-center md:max-w-full text-center text-4xl md:text-6xl font-klemer font-bold">
         My
         <span className="text-highlight"> Work Experience</span>
       </h1>
       
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10 ">
         {workExperience.map(({id, thumbnail, title, desc}) => (
           <Button 
           id={id} 
           key={id} 
           borderRadius="1.75rem" 
-          className="flex-1 text-secondary border-neutral-200 dark:border-slate-800"
+          className="flex-1 text-secondary border-neutral-200 dark:border-slate-800 justify-start"
           duration={Math.floor(Math.random() * 10000 + 10000)}
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
