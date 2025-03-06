@@ -1,7 +1,5 @@
 import type { Config } from 'tailwindcss';
-
 import svgToDataUri from 'mini-svg-data-uri';
-
 import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
 
 export default {
@@ -11,82 +9,55 @@ export default {
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
-		
 		extend: {
 			animation: {
 				shimmer: 'shimmer 2s linear infinite',
 				first: "moveVertical 30s ease infinite",
-        second: "moveInCircle 20s reverse infinite",
-        third: "moveInCircle 40s linear infinite",
-        fourth: "moveHorizontal 40s ease infinite",
-        fifth: "moveInCircle 20s ease infinite",
+				second: "moveInCircle 20s reverse infinite",
+				third: "moveInCircle 40s linear infinite",
+				fourth: "moveHorizontal 40s ease infinite",
+				fifth: "moveInCircle 20s ease infinite",
 			},
 			keyframes: {
 				shimmer: {
-					from: {
-						backgroundPosition: '0 0',
-					},
-					to: {
-						backgroundPosition: '-200% 0',
-					},
+					from: { backgroundPosition: '0 0' },
+					to: { backgroundPosition: '-200% 0' },
 				},
 				moveHorizontal: {
-          "0%": {
-            transform: "translateX(-50%) translateY(-10%)",
-          },
-          "50%": {
-            transform: "translateX(50%) translateY(10%)",
-          },
-          "100%": {
-            transform: "translateX(-50%) translateY(-10%)",
-          },
+					"0%": { transform: "translateX(-50%) translateY(-10%)" },
+					"50%": { transform: "translateX(50%) translateY(10%)" },
+					"100%": { transform: "translateX(-50%) translateY(-10%)" },
 				},
 				moveInCircle: {
-          "0%": {
-            transform: "rotate(0deg)",
-          },
-          "50%": {
-            transform: "rotate(180deg)",
-          },
-          "100%": {
-            transform: "rotate(360deg)",
-          },
-        },
-        moveVertical: {
-          "0%": {
-            transform: "translateY(-50%)",
-          },
-          "50%": {
-            transform: "translateY(50%)",
-          },
-          "100%": {
-            transform: "translateY(-50%)",
-          },
-        },
+					"0%": { transform: "rotate(0deg)" },
+					"50%": { transform: "rotate(180deg)" },
+					"100%": { transform: "rotate(360deg)" },
+				},
+				moveVertical: {
+					"0%": { transform: "translateY(-50%)" },
+					"50%": { transform: "translateY(50%)" },
+					"100%": { transform: "translateY(-50%)" },
+				},
 			},
 			fontFamily: {
-				montserrat: ['Montserrat', 'sans-serif'], // This will be your main font
-				raleway: ['Raleway', 'sans-serif'], // Secondary font
-				klemer: ['Klemer', 'sans-serif'], // Add your custom font
+				montserrat: ['Montserrat', 'sans-serif'],
+				raleway: ['Raleway', 'sans-serif'],
+				klemer: ['Klemer', 'sans-serif'],
 			},
 			colors: {
-				black: {
-					DEFAULT: '#000',
-					100: '#000319',
-				},
+				black: { DEFAULT: '#000', 100: '#000319' },
 				primary: '#282a29',
 				secondary: '#f6f4eb',
-				accent: '#f4a261', // Light Pumpkin
-				warm: '#e8c3a1', // Peach Beige
-				highlight: '#f9d8c2', // Delicate Apricot
-				gray: '#909090', // Soft Gray
+				accent: '#f4a261',
+				warm: '#e8c3a1',
+				highlight: '#f9d8c2',
+				gray: '#909090',
 				hero: '#D7D7D7',
 				icon: '#C4C4C4',
 				shadeLow: '#333534',
-				shadeHigh:'#3e4140',
-				shadow:'#6b716e'
+				shadeHigh: '#3e4140',
+				shadow: '#6b716e',
 			},
-			
 		},
 	},
 	plugins: [
@@ -111,6 +82,18 @@ export default {
 				},
 				{ values: flattenColorPalette(theme('backgroundColor')), type: 'color' }
 			);
+		},
+
+		// Add the color variables as global CSS variables
+		function addVariablesForColors({ addBase, theme }: any) {
+			const allColors = flattenColorPalette(theme("colors"));
+			const newVars = Object.fromEntries(
+				Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+			);
+
+			addBase({
+				":root": newVars,
+			});
 		},
 	],
 } satisfies Config;

@@ -8,14 +8,14 @@ import Image from "next/image";
 
 const RecentProjects = () => {
   return (
-    <div className="pt-20" id="projects">
+    <div className="pt-10" id="projects">
       <h1 className="heading justify-center md:max-w-full text-center text-4xl md:text-6xl font-klemer font-bold">
         A small selection of{" "}
         <span className="text-highlight">recent projects</span>
       </h1>
       
       
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-32 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center gap-x-32 gap-y-4 mt-5">
         {projects.map(({id, img, title, des, iconLists, link}) => (
           <div
             className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center w-[80vw] sm:w-[570px]"
