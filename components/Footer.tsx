@@ -12,7 +12,7 @@ const Footer = () => {
         Thank you for checking out
         <span className="text-highlight"> my portfolio</span>
       </h1>
-      <p className="text-secondary md:mt-10 my-5 text-center">Reach out to me today! and let&apos;s figure out how we can work together</p>
+      <p className="text-secondary md:mt-10 my-5 text-center">Reach out to me today, and let&apos;s figure out how we can work together!</p>
       <Link href='mailto:jonathanamir1@gmail.com'>
       <MagicButton title="Lets get in touch" icon={<FaLocationArrow />} position="right" />
       </Link>

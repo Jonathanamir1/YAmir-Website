@@ -27,7 +27,7 @@ const Grid = () => {
 export const gridItems = [
   {
     id: 1,
-    title: "I am motivated and detail-oriented full stack developer",
+    title: "I am motivated and detail-oriented full stack developer.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] ",
     imgClassName: "w-full h-full ",
@@ -37,7 +37,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm Transitioned to tech from creative industry",
+    title: "Transitioning to tech from creative industry.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -47,8 +47,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "My tech stack.",
+    description: "I constantly try to improve.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -78,7 +78,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Always Evolving as a Developer",
+    title: "Self-taught and always learning by doing.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",

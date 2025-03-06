@@ -7,8 +7,8 @@ import { TbBriefcaseFilled } from 'react-icons/tb';
 const Hero = () => {
 	return (
 		<div className=' pt-36 '>
-			<div className='h-screen w-full dark:bg-primary bg-secondary  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] absolute flex items-center justify-center top-0 left-0'>
-				<div className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-primary bg-secondary [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]' />
+			<div className='h-screen w-full bg-primary  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] absolute flex items-center justify-center top-0 left-0'>
+				<div className='absolute pointer-events-none inset-0 flex items-center justify-center bg-primary  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]' />
 			</div>
 
 			<div className='flex justify-left relative  my-20 z-10 md:justify-center lg:justify-start '>
